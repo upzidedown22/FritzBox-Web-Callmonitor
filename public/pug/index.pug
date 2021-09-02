@@ -3,9 +3,9 @@ mixin call(data)
     figure(class="media-left")
       p(class="image is-64x64")
         if(data.type == "incoming")
-          img(src="./img/incoming.png")
+          img(src="./img/incomingg.png")
         else if(data.type == "outgoing")
-          img(src="./img/outgoing.png")
+          img(src="./img/outgoingg.png")
         else if(data.type == "missed")
           img(src="./img/missed-call.png")
         else
@@ -21,7 +21,7 @@ mixin call(data)
           if(data.name)
             span   -  #{data.name}
           br
-          span Länge: #{data.duration} (hh:mm)
+          span Duur oproep: #{data.duration} (hh:mm)
           br
           span Datum: #{data.date}
 
