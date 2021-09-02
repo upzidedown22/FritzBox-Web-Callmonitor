@@ -16,7 +16,7 @@ mixin call(data)
           if(data.number)
             strong #{data.number}
           else
-            strong Unbekannt
+            strong Onbekend
 
           if(data.name)
             span   -  #{data.name}
@@ -27,7 +27,7 @@ mixin call(data)
 
 html
   head
-    title Anrufe
+    title Gemiste oproepen
     link(rel="stylesheet" type="text/css" href="./css/bulma.min.css")
     link(rel="apple-touch-icon" href="./img/phone.png")
     link(rel="icon" href="./img/phone.png")
@@ -37,17 +37,10 @@ html
     section(class="hero is-primary")
       div(class="hero-body")
         div(class="container")
-          h1(class="title") Anrufliste
+          h1(class="title") Gemiste oproepen
 
     div(class="section")
       each call in calls
         +call(call)
 
     div(class="section")
-      span Icons made by Creaticca Creative Agency from www.flaticon.com
-      br
-      span Icons made by Those Icons from www.flaticon.com
-      br
-      span Icons made by Smashicons from www.flaticon.com
-      br
-      span Icons made by Freepik from www.flaticon.com
